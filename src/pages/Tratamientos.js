@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './Tratamientos.css';
+import { showTratamientosImagenes } from '../config/siteFeatures';
 
 const categoriasData = [
   {
@@ -422,12 +423,16 @@ const Tratamientos = () => {
             </div>
             
             <div className="tratamientos-content-body">
-              {/* Columna izquierda: descripción e imagen */}
               <div className="tratamientos-main">
                 <p className="tratamientos-descripcion">{tratamientoActivo.descripcion}</p>
-                <div className="tratamientos-imagen">
-                  <img src="https://placehold.co/600x400/E9DBD8/666666?text=Imagen+del+tratamiento" alt={tratamientoActivo.nombre} />
-                </div>
+                {showTratamientosImagenes && (
+                  <div className="tratamientos-imagen">
+                    <img
+                      src="https://placehold.co/600x400/E9DBD8/666666?text=Imagen+del+tratamiento"
+                      alt={tratamientoActivo.nombre}
+                    />
+                  </div>
+                )}
                 <a 
                   href={`https://api.whatsapp.com/send?phone=5491150535098&text=${encodeURIComponent(`Hola! Estoy buscando más información sobre ${categoriaActiva.nombre} - ${tratamientoActivo.nombre}`)}`}
                   target="_blank"
