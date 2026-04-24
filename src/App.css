@@ -84,7 +84,7 @@
 
 /* Estilos específicos para cada sección */
 .section-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/danielaclara.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/daniela-hero.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
