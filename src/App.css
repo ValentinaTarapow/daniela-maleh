@@ -127,8 +127,9 @@
 
 .hero-link {
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 700;
   text-decoration: underline;
+  text-underline-offset: 0.12em;
   transition: opacity 0.3s ease;
 }
 
