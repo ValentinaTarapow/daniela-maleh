@@ -192,7 +192,26 @@ function HomePage() {
               <p className="equipo-subtitle">Un espacio médico especializado en dermatología clínica y estética</p>
               
               <div className="equipo-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div className="equipo-section-label">
+                  <h3>Historia</h3>
+                </div>
+                <p>
+                  Due Derma nace en 2016 como un espacio dedicado a la dermatología clínica y
+                  estética médica, fundado por la Dra. Daniela Maleh, con un enfoque profesional,
+                  cercano y personalizado.
+                </p>
+                <div className="equipo-section-label">
+                  <h3>Equipo</h3>
+                </div>
+                <p>
+                  Contamos con un equipo de dermatólogas especializadas en dermatología integral,
+                  estética médica y salud capilar, trabajando de manera coordinada para brindar un
+                  abordaje completo.
+                </p>
+                <p>
+                  Incorporamos tecnología como la plataforma láser Harmony, junto con servicios de
+                  cosmiatría y depilación láser.
+                </p>
               </div>
 
               <a 
