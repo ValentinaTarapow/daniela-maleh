@@ -149,7 +149,14 @@ function HomePage() {
             </div>
             
             <div className="treatments-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+              <p>
+                Abordamos cada caso desde un enfoque dermatológico integral, combinando medicina
+                inyectable y procedimientos mínimamente invasivos. Cada tratamiento se indica de forma
+                personalizada, con criterios médicos y seguimiento continuo.
+              </p>
+              <p>
+                Explorá los tratamientos disponibles o accedé a la propuesta completa de Due Derma.
+              </p>
             </div>
 
             <div className="treatments-buttons">
