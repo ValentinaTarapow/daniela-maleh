@@ -159,22 +159,29 @@ function HomePage() {
         </section>
 
         <section id="equipo" className="section section-4">
-          <div className="section-content equipo-content">
-            <h1>Equipo Due Derma</h1>
-            <p className="equipo-subtitle">Un espacio médico especializado en dermatología clínica y estética</p>
-            
-            <div className="equipo-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+          <div className="section-4-left">
+            <span className="equipo-blob equipo-blob--1" aria-hidden="true" />
+            <span className="equipo-blob equipo-blob--2" aria-hidden="true" />
+            <div className="section-content equipo-content">
+              <h1>Equipo Due Derma</h1>
+              <p className="equipo-subtitle">Un espacio médico especializado en dermatología clínica y estética</p>
+              
+              <div className="equipo-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
 
-            <a 
-              href="https://duederma.com.ar/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="equipo-btn"
-            >
-              Ir a Due Derma <i className="fas fa-arrow-right"></i>
-            </a>
+              <a 
+                href="https://duederma.com.ar/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="equipo-btn"
+              >
+                Ir a Due Derma <i className="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div className="section-4-right">
+            <div className="recepcion-image"></div>
           </div>
         </section>
 

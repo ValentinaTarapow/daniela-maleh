@@ -37,7 +37,7 @@
 }
 
 .staff-carousel .dot.active {
-  background-color: #0c0c0c !important;
+  background-color: #0d0807 !important;
 }
 
 .section-title {
@@ -46,7 +46,7 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 0.5rem;
-  color: #0c0c0c;
+  color: #0d0807;
 }
 
 .carousel-container {
@@ -152,7 +152,7 @@
 .carousel-btn {
   background: none !important;
   background-color: transparent !important;
-  color: #0c0c0c !important;
+  color: #0d0807 !important;
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
@@ -216,7 +216,7 @@
 }
 
 .dot.active {
-  background-color: #0c0c0c !important;
+  background-color: #0d0807 !important;
   transform: scale(1.2);
 }
 
@@ -225,7 +225,7 @@
 }
 
 .dot.active:hover {
-  background-color: #0c0c0c !important;
+  background-color: #0d0807 !important;
 }
 
 /* Estilos para las cards del doctor - Igual que desktop */
@@ -326,7 +326,7 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.15rem;
   font-weight: 600;
-  color: #0c0c0c;
+  color: #0d0807;
   margin: 0;
   line-height: 1.3;
 }
@@ -339,7 +339,7 @@
 .doctor-title {
   font-size: 0.85rem;
   font-weight: 500;
-  color: #0c0c0c;
+  color: #0d0807;
   margin: 0;
   opacity: 0.8;
   height: 1.2rem;
@@ -354,7 +354,7 @@
 .doctor-card.director-card .doctor-title {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #A68B82;
+  color: #7A6057;
   margin: 0;
   opacity: 0.8;
   height: 1.2rem;
@@ -368,7 +368,7 @@
 
 .doctor-specialty {
   font-size: 0.8rem;
-  color: #0c0c0c;
+  color: #0d0807;
   margin: 0;
   opacity: 0.7;
   line-height: 1.3;

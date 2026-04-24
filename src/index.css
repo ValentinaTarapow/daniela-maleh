@@ -23,7 +23,7 @@ html {
   #root {
     color-scheme: light only !important;
     background-color: #ffffff !important;
-    color: #0c0c0c !important;
+    color: #0d0807 !important;
   }
 }
 
@@ -34,7 +34,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
-  color: #0c0c0c;
+  color: #0d0807;
   color-scheme: light only;
 }
 

@@ -54,7 +54,7 @@ export default Footer;
 
 // --- Styled Components ---
 const FooterWrapper = styled.footer`
-  background: #0c0c0c;
+  background: #0d0807;
   color: #ffffff;
   padding: 2.5rem 1.5rem;
   font-size: 0.95rem;
