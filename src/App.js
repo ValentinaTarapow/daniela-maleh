@@ -25,18 +25,21 @@ const aboutCards = [
   {
     icon: 'fas fa-graduation-cap',
     title: 'Formación',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+    description:
+      'Hice un año de clínica médica en el Hospital Pirovano y luego me formé en dermatología en el Hospital Fernández. Tuve la oportunidad de capacitarme varias veces en la clínica Dermik de Barcelona.',
   },
   {
-    icon: 'fas fa-heartbeat',
-    title: 'Enfoque médico',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+    icon: 'fas fa-microphone',
+    title: 'Speaker y docencia',
+    description:
+      'Soy Speaker de Merz Argentina: doy Webinars y charlas para capacitar a colegas. En mi clínica Due Derma dicto cursos para médicos.',
   },
   {
     icon: 'fas fa-star',
-    title: 'Qué me diferencia',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
-  }
+    title: 'Actualización y enfoque',
+    description:
+      'Busco actualizarme permanentemente asistiendo a congresos y capacitaciones, para darle a mis pacientes los mejores tratamientos.',
+  },
 ];
 
 // Componente HomePage (página principal)
@@ -135,8 +138,15 @@ function HomePage() {
 
         <section id="treatments" className="section section-3">
           <div className="treatments-content">
-            <h1 className="treatments-title">Tratamientos</h1>
-            <p className="treatments-subtitle">Especializada en Medicina Inyectable</p>
+            <div className="treatments-heading">
+              <h1 className="treatments-title">Tratamientos</h1>
+              <div className="treatments-title-divider" aria-hidden="true">
+                <span className="treatments-title-divider__line" />
+                <span className="treatments-title-divider__dot" />
+                <span className="treatments-title-divider__line" />
+              </div>
+              <p className="treatments-subtitle">Especializada en Medicina Inyectable</p>
+            </div>
             
             <div className="treatments-description">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>

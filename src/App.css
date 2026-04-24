@@ -244,6 +244,8 @@
   bottom: 0;
   background: rgba(255, 255, 255, 0.95);
   z-index: 1;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 .section-2 > * {
@@ -470,6 +472,34 @@
   overflow: hidden;
 }
 
+.section-3::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.section-3::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.4),
+    rgba(0, 0, 0, 0.05)
+  );
+}
+
+.section-3 > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* Treatments Section Styles */
 .treatments-content {
   text-align: center;
@@ -479,18 +509,72 @@
   box-sizing: border-box;
 }
 
+/* gap uniforme título / línea / subtítulo (misma distancia visual) */
+.treatments-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: clamp(0.65rem, 1.6vw, 0.85rem);
+  margin-bottom: 0;
+}
+
 .treatments-title {
   position: relative;
   z-index: 0;
   isolation: isolate;
-  display: inline-block;
+  display: block;
   max-width: 100%;
+  width: 100%;
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 600;
+  line-height: 1.2;
   color: #0d0807;
-  margin-bottom: 0.5rem;
-  padding: 0.2em 0.35em;
+  margin: 0;
+  padding: 0.15em 0.35em 0;
+  text-align: center;
+}
+
+/* Línea decorativa con punto central — accent dark #7A6057 */
+.treatments-title-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 13.5rem;
+  margin: 0;
+  padding: 0 0.5rem;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.treatments-title-divider__line {
+  flex: 1;
+  min-width: 0;
+  height: 1px;
+  display: block;
+  border: none;
+}
+
+.treatments-title-divider__line:first-child {
+  background: linear-gradient(90deg, rgba(122, 96, 87, 0) 0%, #7A6057 100%);
+}
+
+.treatments-title-divider__line:last-child {
+  background: linear-gradient(90deg, #7A6057 0%, rgba(122, 96, 87, 0) 100%);
+}
+
+.treatments-title-divider__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #7A6057;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(122, 96, 87, 0.2);
 }
 
 /* Halo visible detrás del texto (text-shadow se perdía con el fondo) */
@@ -518,7 +602,11 @@
 .treatments-subtitle {
   font-size: clamp(1rem, 3vw, 1.3rem);
   color: #0d0807;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
+  line-height: 1.45;
+  text-align: center;
+  width: 100%;
+  max-width: 36rem;
 }
 
 .treatments-description {
@@ -808,6 +896,8 @@
 
 /* Section 5 - Speaker */
 .section-5 {
+  position: relative;
+  overflow: hidden;
   background: 
     linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)),
     url('./assets/speaker-bg.png');
@@ -815,6 +905,21 @@
   background-position: center;
   background-repeat: no-repeat;
   color: #0d0807;
+}
+
+.section-5::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.section-5 > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* Speaker Section Styles */

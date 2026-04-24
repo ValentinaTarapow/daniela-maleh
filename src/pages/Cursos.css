@@ -1,5 +1,6 @@
 /* Cursos Page Styles */
 .cursos-page {
+  position: relative;
   min-height: calc(100vh - 70px);
   background-color: #f9f8f7;
   padding: 3rem 2rem;
@@ -8,7 +9,19 @@
   overflow-x: hidden;
 }
 
+.cursos-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
 .cursos-container {
+  position: relative;
+  z-index: 1;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;

@@ -18,17 +18,29 @@ const SobreMi = () => {
           
           <section className="sobre-mi-section">
             <h2>Formación</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>
+              Hice un año de clínica médica en el Hospital Pirovano y luego me formé en dermatología
+              en el Hospital Fernández.
+            </p>
+            <p>
+              Tuve la oportunidad de capacitarme varias veces en la clínica Dermik de Barcelona.
+            </p>
           </section>
 
           <section className="sobre-mi-section">
-            <h2>Enfoque médico</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <h2>Speaker y docencia</h2>
+            <p>
+              Soy Speaker de Merz Argentina: doy Webinars y charlas para capacitar a colegas. En
+              mi clínica Due Derma dicto cursos para médicos.
+            </p>
           </section>
 
           <section className="sobre-mi-section">
-            <h2>Qué me diferencia</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <h2>Actualización y enfoque</h2>
+            <p>
+              Busco actualizarme permanentemente asistiendo a congresos y capacitaciones, para
+              darle a mis pacientes los mejores tratamientos.
+            </p>
           </section>
 
           <Link to="/" className="sobre-mi-back">
