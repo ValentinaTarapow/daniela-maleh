@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaGlobe } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -40,6 +40,9 @@ href="https://api.whatsapp.com/send?phone=5491150535098&text=Hola%20Dra%20Maleh,
           <SocialGroup>
             <span>Due Derma</span>
             <SocialLinks>
+              <a href="https://duederma.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Sitio web Due Derma">
+                <FaGlobe />
+              </a>
               <a href="https://www.facebook.com/DueDerma/" target="_blank" rel="noreferrer"><FaFacebook /></a>
               <a href="https://www.instagram.com/duederma" target="_blank" rel="noreferrer"><FaInstagram /></a>
             </SocialLinks>
