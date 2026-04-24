@@ -232,20 +232,43 @@ function HomePage() {
         {showSpeakerYCursos && (
           <section id="speaker" className="section section-5">
             <div className="section-content speaker-content">
-              <h1>Speaker & Cursos</h1>
-              <p className="speaker-subtitle">Disertante en congresos, formadora de profesionales y creadora de cursos especializados</p>
+              <div className="speaker-heading">
+                <h1>Speaker & Cursos</h1>
+                <div className="treatments-title-divider" aria-hidden="true">
+                  <span className="treatments-title-divider__line" />
+                  <span className="treatments-title-divider__dot" />
+                  <span className="treatments-title-divider__line" />
+                </div>
+                <p className="speaker-subtitle">
+                  Disertante en congresos, formadora de profesionales y creadora de cursos especializados
+                </p>
+              </div>
 
               <div className="speaker-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>
+                  Participación en espacios de{' '}
+                  <span className="treatments-em">
+                    formación profesional, congresos y actividades académicas
+                  </span>{' '}
+                  vinculadas a la{' '}
+                  <span className="treatments-em">dermatología clínica y estética</span>. Desarrollo
+                  de contenidos orientados a la{' '}
+                  <span className="treatments-em">actualización y capacitación continua</span>.
+                </p>
               </div>
 
               <div className="speaker-buttons">
-                <Link to="/speaker" className="speaker-btn speaker-btn-primary">
-                  Ver charlas y participaciones
-                </Link>
-                <Link to="/cursos" className="speaker-btn speaker-btn-primary">
-                  Ver cursos
-                </Link>
+                <a
+                  href={`https://api.whatsapp.com/send?phone=5491150535098&text=${encodeURIComponent(
+                    'Hola, Dra. Maleh. Me gustaría recibir información sobre cursos o charlas. Muchas gracias.'
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="speaker-btn speaker-btn-primary"
+                >
+                  <i className="fab fa-whatsapp"></i>
+                  Consultar cursos o charlas
+                </a>
               </div>
             </div>
           </section>
