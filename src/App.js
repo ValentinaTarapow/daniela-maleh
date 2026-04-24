@@ -281,6 +281,7 @@ function App() {
         path="/cursos"
         element={showSpeakerYCursos ? <Cursos /> : <Navigate to="/" replace />}
       />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
