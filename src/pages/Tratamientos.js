@@ -429,7 +429,7 @@ const Tratamientos = () => {
                   <img src="https://placehold.co/600x400/E9DBD8/666666?text=Imagen+del+tratamiento" alt={tratamientoActivo.nombre} />
                 </div>
                 <a 
-                  href={`https://api.whatsapp.com/send?phone=5491131420521&text=${encodeURIComponent(`Hola! Estoy buscando más información sobre ${categoriaActiva.nombre} - ${tratamientoActivo.nombre}`)}`}
+                  href={`https://api.whatsapp.com/send?phone=5491150535098&text=${encodeURIComponent(`Hola! Estoy buscando más información sobre ${categoriaActiva.nombre} - ${tratamientoActivo.nombre}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="tratamientos-consulta-btn"

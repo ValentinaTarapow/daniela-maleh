@@ -71,7 +71,7 @@ function HomePage() {
                 Ver tratamientos
               </button>
               <a 
-                href="https://api.whatsapp.com/send?phone=5491131420521&text=Hola%20Dra%20Maleh,%20quisiera%20solicitar%20una%20consulta..." 
+                href="https://api.whatsapp.com/send?phone=5491150535098&text=Hola%20Dra%20Maleh,%20quisiera%20solicitar%20una%20consulta..." 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hero-btn hero-btn-secondary"
@@ -237,7 +237,7 @@ function HomePage() {
       <Footer />
 
       {/* Botón flotante de WhatsApp */}
-      <a href="https://api.whatsapp.com/send?phone=5491131420521&text=Hola%20Dra%20Maleh,%20quisiera%20recibir%20más%20información%20sobre..." 
+      <a href="https://api.whatsapp.com/send?phone=5491150535098&text=Hola%20Dra%20Maleh,%20quisiera%20recibir%20más%20información%20sobre..." 
          target="_blank" 
          rel="noopener noreferrer" 
          className="whatsapp-float">

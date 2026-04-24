@@ -11,10 +11,10 @@ const Footer = () => {
           <h4>Contacto</h4>
           <p>
             <a 
-              href="https://api.whatsapp.com/send?phone=5491131420521&text=Hola%20Dra%20Maleh,%20quisiera%20recibir%20más%20información%20sobre..." 
+href="https://api.whatsapp.com/send?phone=5491150535098&text=Hola%20Dra%20Maleh,%20quisiera%20recibir%20más%20información%20sobre..."
               target="_blank" rel="noreferrer"
             >
-              <FaWhatsapp /> +54 11 3142-0521
+              <FaWhatsapp /> +54 11 5053-5098
             </a>
           </p>
           <p>
