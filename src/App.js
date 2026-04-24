@@ -1,7 +1,8 @@
 import './App.css';
 import { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import Header from './components/Header';
+import { showTrayectoriaCompletaLink, showSpeakerYCursos } from './config/siteFeatures';
 import Footer from './components/Footer';
 import SobreMi from './pages/SobreMi';
 import Tratamientos from './pages/Tratamientos';
@@ -130,9 +131,11 @@ function HomePage() {
               ))}
             </div>
 
-            <Link to="/sobre-mi" className="about-me-link">
-              Conocer mi trayectoria completa
-            </Link>
+            {showTrayectoriaCompletaLink && (
+              <Link to="/sobre-mi" className="about-me-link">
+                Conocer mi trayectoria completa
+              </Link>
+            )}
           </div>
         </section>
 
@@ -207,25 +210,27 @@ function HomePage() {
           </div>
         </section>
 
-        <section id="speaker" className="section section-5">
-          <div className="section-content speaker-content">
-            <h1>Speaker & Cursos</h1>
-            <p className="speaker-subtitle">Disertante en congresos, formadora de profesionales y creadora de cursos especializados</p>
-            
-            <div className="speaker-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+        {showSpeakerYCursos && (
+          <section id="speaker" className="section section-5">
+            <div className="section-content speaker-content">
+              <h1>Speaker & Cursos</h1>
+              <p className="speaker-subtitle">Disertante en congresos, formadora de profesionales y creadora de cursos especializados</p>
 
-            <div className="speaker-buttons">
-              <Link to="/speaker" className="speaker-btn speaker-btn-primary">
-                Ver charlas y participaciones
-              </Link>
-              <Link to="/cursos" className="speaker-btn speaker-btn-primary">
-                Ver cursos
-              </Link>
+              <div className="speaker-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+
+              <div className="speaker-buttons">
+                <Link to="/speaker" className="speaker-btn speaker-btn-primary">
+                  Ver charlas y participaciones
+                </Link>
+                <Link to="/cursos" className="speaker-btn speaker-btn-primary">
+                  Ver cursos
+                </Link>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
       </div>
       
       {/* Footer fuera del scroll snap */}
@@ -249,8 +254,14 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/sobre-mi" element={<SobreMi />} />
       <Route path="/tratamientos" element={<Tratamientos />} />
-      <Route path="/speaker" element={<Speaker />} />
-      <Route path="/cursos" element={<Cursos />} />
+      <Route
+        path="/speaker"
+        element={showSpeakerYCursos ? <Speaker /> : <Navigate to="/" replace />}
+      />
+      <Route
+        path="/cursos"
+        element={showSpeakerYCursos ? <Cursos /> : <Navigate to="/" replace />}
+      />
     </Routes>
   );
 }

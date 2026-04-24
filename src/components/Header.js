@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { showSpeakerYCursos } from '../config/siteFeatures';
 import './Header.css';
 import logoImage from '../assets/logo.png';
 
@@ -82,16 +83,20 @@ const Header = () => {
                 Equipo
               </button>
             </li>
-            <li>
-              <button className="nav-link" onClick={() => goToPage('/speaker')}>
-                Speaker
-              </button>
-            </li>
-            <li>
-              <button className="nav-link" onClick={() => goToPage('/cursos')}>
-                Cursos
-              </button>
-            </li>
+            {showSpeakerYCursos && (
+              <>
+                <li>
+                  <button className="nav-link" onClick={() => goToPage('/speaker')}>
+                    Speaker
+                  </button>
+                </li>
+                <li>
+                  <button className="nav-link" onClick={() => goToPage('/cursos')}>
+                    Cursos
+                  </button>
+                </li>
+              </>
+            )}
             <li>
               <button className="nav-link" onClick={() => goToSection('contact')}>
                 Contacto
@@ -135,16 +140,20 @@ const Header = () => {
               Equipo
             </button>
           </li>
-          <li>
-            <button className="nav-mobile-link" onClick={() => goToPage('/speaker')}>
-              Speaker
-            </button>
-          </li>
-          <li>
-            <button className="nav-mobile-link" onClick={() => goToPage('/cursos')}>
-              Cursos
-            </button>
-          </li>
+          {showSpeakerYCursos && (
+            <>
+              <li>
+                <button className="nav-mobile-link" onClick={() => goToPage('/speaker')}>
+                  Speaker
+                </button>
+              </li>
+              <li>
+                <button className="nav-mobile-link" onClick={() => goToPage('/cursos')}>
+                  Cursos
+                </button>
+              </li>
+            </>
+          )}
           <li>
             <button className="nav-mobile-link" onClick={() => goToSection('contact')}>
               Contacto
