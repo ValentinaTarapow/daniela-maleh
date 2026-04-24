@@ -1,0 +1,13 @@
+# Redirigir al inicio las rutas que no son archivos ni carpetas reales (evita 404 en URLs tipo /msms)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Dejar pasar lo que sí existe (assets del build, index.html, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Lo demás → raíz del sitio
+  RewriteRule . / [R=302,L]
+</IfModule>
