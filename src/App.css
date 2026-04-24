@@ -629,6 +629,15 @@
   margin-top: 1rem;
 }
 
+.treatments-em {
+  color: #4a3832;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+  text-decoration-thickness: 1px;
+}
+
 .treatments-buttons {
   display: flex;
   gap: 1rem;

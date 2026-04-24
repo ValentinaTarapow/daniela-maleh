@@ -150,12 +150,17 @@ function HomePage() {
             
             <div className="treatments-description">
               <p>
-                Abordamos cada caso desde un enfoque dermatológico integral, combinando medicina
-                inyectable y procedimientos mínimamente invasivos. Cada tratamiento se indica de forma
-                personalizada, con criterios médicos y seguimiento continuo.
+                Abordamos cada caso desde un{' '}
+                <span className="treatments-em">enfoque dermatológico integral</span>, combinando{' '}
+                <span className="treatments-em">medicina inyectable</span> y{' '}
+                <span className="treatments-em">procedimientos mínimamente invasivos</span>. Cada
+                tratamiento se indica de forma personalizada, con{' '}
+                <span className="treatments-em">criterios médicos y seguimiento continuo</span>.
               </p>
               <p>
-                Explorá los tratamientos disponibles o accedé a la propuesta completa de Due Derma.
+                <span className="treatments-em">Explorá los tratamientos disponibles</span>
+                {' '}o accedé a la{' '}
+                <span className="treatments-em">propuesta completa de Due Derma</span>.
               </p>
             </div>
 
