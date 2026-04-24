@@ -220,7 +220,11 @@
   .section-content {
     padding: 1rem;
   }
-  
+
+  .section-4 .section-content {
+    padding: 0.45rem 0.2rem;
+  }
+
   .hero-content {
     padding: 0 0.5rem;
   }
@@ -879,6 +883,8 @@
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* Títulos con líneas arriba y abajo (estilo rótulo) */
@@ -953,10 +959,14 @@
 
 @media (max-width: 768px) {
   .equipo-content {
-    padding: 0 0.5rem;
+    padding: 0;
   }
-  
-  .equipo-btn {
+
+  .equipo-content .equipo-btn {
+    display: flex;
+    width: fit-content;
+    max-width: min(100%, 20rem);
+    margin: 1.25rem auto 0;
     padding: 0.85rem 1.5rem;
   }
 }
@@ -1467,26 +1477,27 @@
 
   .section-4 {
     flex-direction: column !important;
-    min-height: 100vh;
+    min-height: auto;
   }
-  
+
   .section-4-left {
     width: 100% !important;
-    flex: 0 0 50vh;
-    min-height: 50vh;
-    height: 50vh;
-    max-height: 50vh;
-    padding: 1.25rem 1rem;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    flex: 0 0 auto;
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    max-height: none;
+    padding: 1.1rem 0.75rem 1.5rem;
+    overflow: visible;
   }
-  
+
   .section-4-right {
     width: 100% !important;
-    flex: 0 0 50vh;
-    min-height: 50vh;
-    height: 50vh;
-    max-height: 50vh;
+    flex: 0 0 auto;
+    min-width: 0;
+    min-height: 40vh;
+    height: 42vh;
+    max-height: none;
   }
   
   .section-4 .recepcion-image {
@@ -1496,15 +1507,17 @@
   
   .section-4 .section-content {
     max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
+    padding: 0.5rem 0.4rem;
+    box-sizing: border-box;
   }
 
   .section-4 .section-content.equipo-content {
-    max-width: 80%;
-    width: 80%;
-    margin-left: 0;
-    margin-right: auto;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
     text-align: left;
   }
 
